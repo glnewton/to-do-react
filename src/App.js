@@ -11,6 +11,7 @@ import Footer from './components/Footer.js';
 
 //Pages
 import ViewToDoPage from './components/ViewTodoPage.js';
+import ViewCompletedTodosPage from './pages/ViewCompletedTodosPage';
 
 function App() {
 
@@ -24,6 +25,8 @@ function App() {
           <Route path="/create-todo" element={<CreateTodoForm />} />
           <Route path='/view-todo/:id' element={<ViewToDoPage />} />
           <Route path='/edit-todo/:id' element={<EditTodoForm />} />
+          <Route path='/completed-todos' element={<ViewCompletedTodosPage />} />
+          <Route path='*' element={<h1>404 Not Found</h1>} />
         </Routes>
       </Router>
       <Footer />

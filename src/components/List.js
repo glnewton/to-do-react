@@ -20,11 +20,11 @@ export default function List() {
     <>
       <h1>To Do List</h1>
       {loading ? <p>Loading...</p> :
-        todos.map((element, index) => {
-          return (<Todo element={element} key={index} />)
-        }
-        )
+        todos.filter(todo => !todo.complete).map(todo =>
+                <Todo key={todo._id} element={todo} />
+            )
       }
     </>
   );
 }
+

@@ -109,3 +109,14 @@ nav a {
   border-radius: 5px;
   cursor: pointer;
 }
+
+
+/* Todo Component Styles */
+
+.completed {
+  text-decoration: line-through;
+}
+
+.not-completed {
+  background-color: yellow;
+}
